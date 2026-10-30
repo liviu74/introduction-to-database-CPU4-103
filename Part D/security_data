@@ -1,0 +1,14 @@
+USE crownfield_eye_hospital;
+
+DROP TABLE IF EXISTS user_credentials;
+
+CREATE TABLE user_credentials (
+    user_id VARCHAR(10) PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(64) NOT NULL
+);
+
+INSERT INTO user_credentials (user_id, username, password_hash)
+VALUES ('USR001', 'pmaiyaki_admin', SHA2('SecureStaffPassword2026!', 256));
+
+SELECT user_id, username, password_hash FROM user_credentials;
