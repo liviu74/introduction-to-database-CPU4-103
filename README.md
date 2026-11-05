@@ -1,4 +1,4 @@
-![ERD DIAGRAM] (ERD.2.mwb)
+![ERD DIAGRAM] (ERD.2.png)
 # Crownfield Eye Hospital database — starter files
 
 Module: CPU4:103, Introduction to Database (GBS/BSU)
